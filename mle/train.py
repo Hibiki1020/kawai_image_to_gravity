@@ -57,8 +57,8 @@ def train_model(net, dataloaders_dict, optimizer, num_epochs, str_hyperparameter
                 with torch.set_grad_enabled(phase == "train"):  #compute grad only in "train"
                     ## forward
                     outputs = net(inputs)
-                    #print(outputs)
-                    #print(labels)
+                    print(outputs)
+                    print(labels)
                     loss = original_criterion.originalCriterion(outputs, labels, device)
 
                     ## backward
