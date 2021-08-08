@@ -18,7 +18,7 @@ class OriginalDataset(data.Dataset):
 
     def __getitem__(self, index):
         img_path = self.data_list[index][0]
-        img = Image.open(img_path).convert("RGB")
+        img = Image.open(img_path).convert('RGB')
         #img = img.convert("RGB")
 
         acc_str_list = self.data_list[index][6:]
