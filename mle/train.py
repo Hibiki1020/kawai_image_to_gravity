@@ -122,8 +122,8 @@ if __name__ == "__main__":
     mean_element = CFG["hyperparameter"]["mean_element"]
     std_element = CFG["hyperparameter"]["std_element"]
     str_optimizer = CFG["hyperparameter"]["str_optimizer"]
-    lr0 = CFG["hyperparameter"]["lr0"]
-    lr1 = CFG["hyperparameter"]["lr1"]
+    lr0 = float(CFG["hyperparameter"]["lr0"])
+    lr1 = float(CFG["hyperparameter"]["lr1"])
     batch_size = CFG["hyperparameter"]["batch_size"]
     num_epochs = CFG["hyperparameter"]["num_epochs"]
 
