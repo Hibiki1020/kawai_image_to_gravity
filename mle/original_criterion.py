@@ -23,7 +23,10 @@ def originalCriterion(outputs, labels, device):
 
     # ratio = 10.0
     # mu = ratio * mu
-    # labels = ratio * labels
+    # labels = ratio * 
+    
+    print(mu)
+    print(labels)
 
     dist = torch.distributions.MultivariateNormal(mu, scale_tril=L)
     loss = -dist.log_prob(labels)
