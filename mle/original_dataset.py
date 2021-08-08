@@ -22,8 +22,8 @@ class OriginalDataset(data.Dataset):
         #img = img.convert("RGB")
 
         acc_str_list = self.data_list[index][8:]
-        print(self.data_list[index])
-        print(acc_str_list)
+        #print(self.data_list[index])
+        #print(acc_str_list)
         acc_list = [float(num) for num in acc_str_list]
         acc = np.array(acc_list)
 
