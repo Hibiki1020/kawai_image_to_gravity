@@ -64,6 +64,7 @@ class OriginalNet(nn.Module):
         # print("x[:, :3] = ", x[:, :3])
         # print("x[:, 3:6] = ", x[:, 3:6])
         # print("x[:, 6:9] = ", x[:, 6:9])
+        print(x)
         return x
 
 ##### test #####
