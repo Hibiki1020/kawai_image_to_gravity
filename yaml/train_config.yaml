@@ -1,18 +1,16 @@
 
 method_name: "regression"
 
-save_top_path: "/home/kawai_image_to_gravity_log/test1"
+save_top_path: "/home/ssd_dir/kawai_image_to_gravity_log/test1"
 
 train:
-  - "/home/ssd_dir/AirSimNH/AirSimNH/range_30_30/dir2_image70000/"
-  - "/home/ssd_dir/AirSimNH/AirSimNH/range_30_30/dir1_image35000/"
-  - "/home/ssd_dir/AirSimNH/AirSimNH/range_30_30/dir3_image210000/"
+  - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/dir2_image70000/"
+#  - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/dir1_image35000/"
+#  - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/dir3_image210000/"
 valid:
-  - "/home/ssd_dir/AirSimNH/AirSimNH/range_30_30/valid_image5000/"
+  - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/valid_image5000/"
 
 csv_name: "image_attitude.csv"
-
-index_csv_path: "/home/ros_catkin_ws/src/cnn_attitude_estimator/index_dict/index_dict_-30_30_range_step1deg.csv"
 
 multiGPU: 1 #1 is ture
 

@@ -3,5 +3,10 @@
         "/home/amsl/AirSim/ros/devel/lib/python3/dist-packages",
         "/home/amsl/catkin_ws/devel/lib/python3/dist-packages",
         "/opt/ros/noetic/lib/python3/dist-packages"
+    ],
+    "python.analysis.extraPaths": [
+        "/home/amsl/AirSim/ros/devel/lib/python3/dist-packages",
+        "/home/amsl/catkin_ws/devel/lib/python3/dist-packages",
+        "/opt/ros/noetic/lib/python3/dist-packages"
     ]
 }
