@@ -29,7 +29,7 @@ def originalCriterion(outputs, labels, device):
     #print(labels)
 
     dist = torch.distributions.MultivariateNormal(mu, scale_tril=L)
-    loss = -dist.log_prob(labels)
+    loss = -1 * dist.log_prob(labels)
     # for i in range(loss.size(0)):
     #     if torch.isnan(loss[i]):
     #         print("torch.isnan(loss[i]) = ", torch.isnan(loss[i]))
