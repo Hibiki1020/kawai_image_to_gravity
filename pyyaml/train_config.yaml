@@ -4,8 +4,8 @@ method_name: "regression"
 save_top_path: "/home/ssd_dir/kawai_image_to_gravity_log/test1"
 
 train:
-  - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/dir2_image70000/"
-#  - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/dir1_image35000/"
+#  - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/dir2_image70000/"
+  - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/dir1_image35000/"
 #  - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/dir3_image210000/"
 valid:
   - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/valid_image5000/"
@@ -25,7 +25,7 @@ hyperparameter:
   lr1: 1e-4
   weight_decay: 0.0
   batch_size: 50
-  num_epochs: 3
+  num_epochs: 2
   dropout_rate: 0.1
   dim_fc_out: 61
   alpha: 1e-4
