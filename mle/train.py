@@ -44,8 +44,8 @@ def train_model(net, dataloaders_dict, optimizer, num_epochs, str_hyperparameter
 
             epoch_loss = 0.0
 
-            if (epoch == 0) and (phase=="train"):
-                continue
+            #if (epoch == 0) and (phase=="train"):
+            #    continue
 
             for inputs, labels in tqdm(dataloaders_dict[phase]):
                 inputs = inputs.to(device)
