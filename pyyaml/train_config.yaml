@@ -1,7 +1,7 @@
 
 method_name: "regression"
 
-save_top_path: "/home/ssd_dir/kawai_image_to_gravity_log/test2/"
+save_top_path: "/home/ssd_dir/kawai_image_to_gravity_log/test3/"
 
 train:
   - "/home/ssd_dir/airsim_dataset_kawai/AirSimNH/range_30_30/dir2_image70000/"
