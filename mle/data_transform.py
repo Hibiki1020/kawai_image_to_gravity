@@ -9,6 +9,7 @@ from torchvision import transforms
 
 class data_transform():
     def __init__(self, resize, mean, std):
+        '''
         self.data_transform = {
             "train": transforms.Compose([
                 transforms.Resize(resize),
@@ -19,6 +20,21 @@ class data_transform():
             "val": transforms.Compose([
                 transforms.Resize(resize),
                 transforms.CenterCrop(resize),
+                transforms.ToTensor(),
+                transforms.Normalize(mean, std)
+            ])
+        }
+        '''
+        self.data_transform = {
+            "train": transforms.Compose([
+                transforms.CenterCrop(resize),
+                transforms.Resize(resize),
+                transforms.ToTensor(),
+                transforms.Normalize(mean, std)
+            ]),
+            "val": transforms.Compose([
+                transforms.CenterCrop(resize),
+                transforms.Resize(resize),
                 transforms.ToTensor(),
                 transforms.Normalize(mean, std)
             ])
